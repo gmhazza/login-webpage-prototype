@@ -1,3 +1,96 @@
 body {
-  font-size: 1em;
+    font-size: 15pt;
+}
+section.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+    background: red;
+    border: 4px solid #102A43;
+    border-radius: 25px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    z-index: 100;
+    width: 400px;
+}
+form.form {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 350px;
+}
+form.form h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #102A43;
+}
+div.inputbox {
+    position: relative;
+    width: 300px;
+    margin: 16px;
+    border-bottom: 2px solid #000;
+}
+div.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: .5s;
+    color: #2e2e2e;
+}
+div.forgot-password {
+    position: relative;
+    width: 300px;
+    margin: 16px;
+    font-size: 0.7em;
+    text-align: center;
+}
+div.forgot-password a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+input:focus~label, 
+input:valid~label{
+    top: -5px;
+}
+div.inputbox input {
+    width: 100%;
+    height: 32px;
+    font-size: 1em;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+div.control {
+    text-align: center;
+}
+div.control input {
+    font-size: 1em;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 32px;
+    background: #1976D2;
+    color: #d3d3d3;
+    font-weight: bold;
+}
+input:hover {
+    cursor: pointer;
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
