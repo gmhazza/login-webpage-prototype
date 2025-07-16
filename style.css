@@ -3,6 +3,7 @@ body {
 }
 section.main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -38,7 +39,7 @@ form.form h1 {
 div.inputbox {
     position: relative;
     width: 300px;
-    margin: 16px;
+    margin: 25px ;
     border-bottom: 2px solid #000;
 }
 div.inputbox label {
@@ -86,6 +87,20 @@ div.control input {
     background: #1976D2;
     color: #d3d3d3;
     font-weight: bold;
+}
+div.checkbox {
+    position: relative;
+    width: 300px;
+    margin: 25px ;
+}
+div.alert {
+    position: absolute;
+    bottom: 10px;
+    width: 600px;
+    visibility: hidden;
+}
+div.alert p {
+    text-align: center;
 }
 input:hover {
     cursor: pointer;
