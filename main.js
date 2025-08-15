@@ -2,11 +2,11 @@ const username_input = document.getElementById('username');
 const email_input = document.getElementById('email');
 const password_input = document.getElementById('password');
 const submit_input = document.getElementById('submit');
-const alertbox_div = document.getElementById('alertbox')
+const alertbox_div = document.getElementById('alertbox');
 
-let username = new String;
-let email = new String;
-let password = new String;
+let username;
+let email;
+let password;
 
 submit_input.addEventListener('click', (e) => {
     e.preventDefault();
@@ -14,7 +14,7 @@ submit_input.addEventListener('click', (e) => {
     email = email_input.value;
     password = password_input.value;
     alertbox_div.hidden = false;
-    const text = alertbox_div.querySelector('p')
+    const text = alertbox_div.querySelector('p');
     if(username == "") {
         alertbox_div.className = "alert alert-danger";
         text.innerText = "Invalid Username";
@@ -29,6 +29,6 @@ submit_input.addEventListener('click', (e) => {
     }
     else {
         alertbox_div.className = "alert alert-success";
-        text.innerText = "Login Successfully"
+        text.innerText = "Login Successfully";
     }
 });
